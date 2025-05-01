@@ -1,3 +1,5 @@
+// This is the file where every things get exported
+
 export {
   IAuthPayload,
   IAuthDocument,
@@ -80,7 +82,7 @@ export {
   NotAuthorizedError,
   FileTooLargeError,
   ServerError,
-  ErrnoException
+  ErrnoException,
 } from './error-handler';
 export { verifyGatewayRequest } from './gateway-middleware';
 export {
@@ -88,5 +90,5 @@ export {
   lowerCase,
   toUpperCase,
   isEmail,
-  isDataURL
+  isDataURL,
 } from './helpers';
