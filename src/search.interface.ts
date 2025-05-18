@@ -1,8 +1,9 @@
 // import { Field, QueryDslRangeQuery, SearchHit } from '@elastic/elasticsearch/lib/api/types';
 
-import { ISellerGig } from './gig.interface';
+import { ISellerGig } from "./gig.interface";
 
 export interface ISearchResult {
+  // hits: SearchHit[];
   hits: ISellerGig[];
   total: number;
 }
