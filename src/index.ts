@@ -1,5 +1,13 @@
 // This is the file where every things get exported
 
+export * from './middlewares/error-handler';
+export * from './errors/custom-error';
+export * from './errors/request-validation-error';
+export * from './errors/database-connection-error';
+export * from './errors/not-found-error';
+export * from './errors/not-authorized-error';
+export * from './errors/bad-request.error';
+
 export {
   IAuthPayload,
   IAuthDocument,
@@ -72,7 +80,7 @@ export {
   ISellerDocument,
 } from './seller.interface';
 export { IEmailLocals } from './email.interface';
-export {configureCloudinary, uploads, videoUpload} from './cloudinary-upload';
+export { configureCloudinary, uploads, videoUpload } from './cloudinary-upload';
 export {
   IErrorResponse,
   IError,
