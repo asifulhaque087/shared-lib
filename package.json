@@ -29,5 +29,9 @@
     "@types/jsonwebtoken": "^9.0.6",
     "rimraf": "^6.0.1",
     "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "@hono/zod-validator": "^0.7.0",
+    "hono": "^4.7.11"
   }
 }
