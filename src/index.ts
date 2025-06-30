@@ -8,6 +8,17 @@ export * from './errors/not-found-error';
 export * from './errors/not-authorized-error';
 export * from './errors/bad-request.error';
 
+// events
+
+export * from './events/base-listener';
+export * from './events/base-publisher';
+export * from './events/buyer-created-event';
+export * from './events/buyer-created-listener';
+export * from './events/buyer-created-publisher';
+export * from './events/routing-keys';
+export * from './events/exchanges';
+export * from './events/queues';
+
 // export {
 //   IAuthPayload,
 //   IAuthDocument,
