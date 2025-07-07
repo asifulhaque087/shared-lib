@@ -8,11 +8,8 @@ export interface AuthCreatedEvent {
   queueName: Queues.Mail_Queue;
 
   data: {
-    receiverEmail?: string;
-    template?: string;
-    verifyLink?: string;
-    resetLink?: string;
-    username?: string;
-    otp?: string;
+    receiverEmail: string;
+    template: string;
+    verifyLink: string;
   };
 }
