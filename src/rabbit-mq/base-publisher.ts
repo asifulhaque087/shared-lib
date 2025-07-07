@@ -1,9 +1,9 @@
 // import amqp from "amqplib";
 
-import { type Channel, type ConsumeMessage } from "amqplib";
-import { RoutingKeys } from "./routing-keys";
-import type { Exchanges } from "./exchanges";
-import type { Queues } from "./queues";
+import { type Channel } from 'amqplib';
+import { RoutingKeys } from './routing-keys';
+import { Exchanges } from './exchanges';
+import { Queues } from './queues';
 
 // const connection = await connect("amqp://localhost");
 // const channel = await connection.createChannel();
@@ -16,8 +16,8 @@ interface Event {
 }
 
 export abstract class Publisher<T extends Event> {
-  abstract exchangeName: T["exchangeName"];
-  abstract routingKey: T["routingKey"];
+  abstract exchangeName: T['exchangeName'];
+  abstract routingKey: T['routingKey'];
 
   private channel: Channel;
 
@@ -26,12 +26,12 @@ export abstract class Publisher<T extends Event> {
   }
 
   async createExchange() {
-    await this.channel.assertExchange(this.exchangeName, "direct", {
+    await this.channel.assertExchange(this.exchangeName, 'direct', {
       durable: false,
     });
   }
 
-  publish(data: T["data"]) {
+  publish(data: T['data']) {
     this.channel.publish(
       this.exchangeName,
       this.routingKey,

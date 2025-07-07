@@ -1,5 +1,6 @@
 // This is the file where every things get exported
 
+// ** Errors
 export * from './middlewares/error-handler';
 export * from './errors/custom-error';
 export * from './errors/request-validation-error';
@@ -8,19 +9,15 @@ export * from './errors/not-found-error';
 export * from './errors/not-authorized-error';
 export * from './errors/bad-request.error';
 
-// ** events
+// ** Event Bus
+export * from './rabbit-mq/base-listener';
+export * from './rabbit-mq/base-publisher';
+export * from './rabbit-mq/routing-keys';
+export * from './rabbit-mq/exchanges';
+export * from './rabbit-mq/queues';
+export * from './rabbit-mq/events/auth-created-event';
 
-export * from './events/base-listener';
-export * from './events/base-publisher';
-export * from './events/buyer-created-event';
-export * from './events/buyer-created-listener';
-export * from './events/buyer-created-publisher';
-export * from './events/routing-keys';
-export * from './events/exchanges';
-export * from './events/queues';
-
-// ** cloudinary
-
+// ** Cloudinary
 export * from './cloudinary-upload';
 
 // export {
