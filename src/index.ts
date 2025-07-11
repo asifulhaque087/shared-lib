@@ -16,6 +16,8 @@ export * from './rabbit-mq/routing-keys';
 export * from './rabbit-mq/exchanges';
 export * from './rabbit-mq/queues';
 export * from './rabbit-mq/events/auth-created-event';
+export * from './rabbit-mq/events/reset-password-event';
+export * from './rabbit-mq/events/change-password-event';
 
 // ** Cloudinary
 export * from './cloudinary-upload';
