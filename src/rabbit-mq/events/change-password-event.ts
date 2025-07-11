@@ -10,5 +10,6 @@ export interface ChangePasswordEvent {
   data: {
     username: string;
     template: string;
+    receiverEmail: string;
   };
 }

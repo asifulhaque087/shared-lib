@@ -1,7 +1,11 @@
 // This is the file where every things get exported
 
-// ** Errors
+// ** Middlewares
 export * from './middlewares/error-handler';
+export * from './middlewares/verify-gateway-token';
+export * from './middlewares/verify-client-token';
+
+// ** Errors
 export * from './errors/custom-error';
 export * from './errors/request-validation-error';
 export * from './errors/database-connection-error';
