@@ -1,3 +1,3 @@
 export enum Queues {
-  Mail_Queue = "mail_queue",
+  Mail_Queue = 'mail_queue',
 }
