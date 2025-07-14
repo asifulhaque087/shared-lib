@@ -1,7 +1,8 @@
-import { CustomError } from './custom-error';
+import type { ContentfulStatusCode } from 'hono/utils/http-status';
+import { CustomError } from './custom-error-hono';
 
 export class NotFoundError extends CustomError {
-  statusCode = 404;
+  statusCode: ContentfulStatusCode = 404;
 
   constructor() {
     super('Route not found');

@@ -1,7 +1,8 @@
-import { CustomError } from './custom-error';
+import type { ContentfulStatusCode } from 'hono/utils/http-status';
+import { CustomError } from './custom-error-hono';
 
 export class DatabaseConnectionError extends CustomError {
-  statusCode = 500;
+  statusCode: ContentfulStatusCode = 500;
 
   constructor() {
     super('Error connecting to db');

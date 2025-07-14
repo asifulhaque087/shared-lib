@@ -1,12 +1,18 @@
-import type { Context } from 'hono';
+import { Request, Response, NextFunction } from 'express';
 import { CustomError } from '../errors/custom-error';
 
-export const errorHandler = (err: Error, c: Context) => {
+export const errorHandler = (
+  err: Error,
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   if (err instanceof CustomError) {
-    return c.json({ errors: err.serializeErrors() }, err.statusCode);
+    return res.status(err.statusCode).send({ errors: err.serializeErrors() });
   }
 
-  console.log(err.message);
-
-  return c.json({ errors: [{ message: 'something went wrong' }] }, 400);
+  console.error(err);
+  res.status(400).send({
+    errors: [{ message: 'Something went wrong' }],
+  });
 };

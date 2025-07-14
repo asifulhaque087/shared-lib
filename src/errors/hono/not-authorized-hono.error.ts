@@ -1,7 +1,8 @@
-import { CustomError } from './custom-error';
+import { ContentfulStatusCode } from 'hono/utils/http-status';
+import { CustomError } from './custom-error-hono';
 
 export class NotAuthorizedError extends CustomError {
-  statusCode = 401;
+  statusCode: ContentfulStatusCode = 401;
 
   constructor() {
     super('Not Authorized');

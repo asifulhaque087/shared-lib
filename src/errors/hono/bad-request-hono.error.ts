@@ -1,7 +1,8 @@
-import { CustomError } from './custom-error';
+import { ContentfulStatusCode } from 'hono/utils/http-status';
+import { CustomError } from './custom-error-hono';
 
 export class BadRequestError extends CustomError {
-  statusCode = 400;
+  statusCode: ContentfulStatusCode = 400;
 
   constructor(public message: string) {
     super(message);

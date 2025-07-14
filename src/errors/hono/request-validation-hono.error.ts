@@ -1,9 +1,11 @@
+
 // import { zValidator } from "@hono/zod-validator";
+import type { ContentfulStatusCode } from 'hono/utils/http-status';
 import { type ZodIssue } from 'zod';
-import { CustomError } from './custom-error';
+import { CustomError } from './custom-error-hono';
 
 export class RequestValidationError extends CustomError {
-  statusCode = 400;
+  statusCode: ContentfulStatusCode = 400;
 
   constructor(public errors: ZodIssue[]) {
     super('Invalid request parameters');

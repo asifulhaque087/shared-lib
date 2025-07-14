@@ -1,7 +1,7 @@
-// import type { ContentfulStatusCode } from "hono/utils/http-status";
+import type { ContentfulStatusCode } from 'hono/utils/http-status';
 
 export abstract class CustomError extends Error {
-  abstract statusCode: number;
+  abstract statusCode: ContentfulStatusCode;
 
   constructor(message: string) {
     super(message);
