@@ -2,13 +2,16 @@
 
 // ** Middlewares
 export * from './middlewares/error-handler';
-export * from './middlewares/verify-gateway-token';
-export * from './middlewares/verify-client-token';
+// export * from './middlewares/hono/verify-gateway-token-hono';
+// export * from './middlewares/hono/verify-client-token-hono';
+
+export * from './middlewares/verify-gateway-token.middleware';
+export * from './middlewares/verify-client-token.middleware';
 
 // ** Errors
 export * from './errors/custom-error';
 export * from './errors/request-validation-error';
-export * from './errors/database-connection-error';
+export * from './errors/connection-error';
 export * from './errors/not-found-error';
 export * from './errors/not-authorized-error';
 export * from './errors/bad-request.error';

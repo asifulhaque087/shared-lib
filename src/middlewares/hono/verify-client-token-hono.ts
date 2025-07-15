@@ -1,6 +1,6 @@
 import { createMiddleware } from 'hono/factory';
 import { verify } from 'hono/jwt';
-import { NotAuthorizedError } from '../errors/not-authorized-error';
+import { NotAuthorizedError } from '../../errors/not-authorized-error';
 
 type Payload = {
   id: number | undefined;

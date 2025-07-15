@@ -1,5 +1,5 @@
 import type { Context } from 'hono';
-import { CustomError } from '../errors/hono/custom-error-hono';
+import { CustomError } from '../../errors/hono/custom-error-hono';
 
 export const errorHandler = (err: Error, c: Context) => {
   if (err instanceof CustomError) {
