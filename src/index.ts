@@ -27,6 +27,9 @@ export * from './rabbit-mq/events/send-email-event';
 // ** Cloudinary
 export * from './cloudinary-upload';
 
+// **Utils
+export * from './utils/handle-async.util';
+
 // ** Old Types
 export {
   IAuthPayload,
