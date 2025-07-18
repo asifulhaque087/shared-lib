@@ -7,6 +7,7 @@ export * from './middlewares/error-handler';
 
 export * from './middlewares/verify-gateway-token.middleware';
 export * from './middlewares/verify-client-token.middleware';
+export * from './middlewares/validation.middleware';
 
 // ** Errors
 export * from './errors/custom-error';
@@ -23,6 +24,8 @@ export * from './rabbit-mq/routing-keys';
 export * from './rabbit-mq/exchanges';
 export * from './rabbit-mq/queues';
 export * from './rabbit-mq/events/send-email-event';
+export * from './rabbit-mq/events/create-buyer.event';
+export * from './rabbit-mq/events/remove-buyers-event';
 
 // ** Cloudinary
 export * from './cloudinary-upload';
