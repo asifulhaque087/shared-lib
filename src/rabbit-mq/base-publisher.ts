@@ -3,7 +3,6 @@
 import { type Channel } from 'amqplib';
 import { RoutingKeys } from './routing-keys';
 import { Exchanges } from './exchanges';
-import { Queues } from './queues';
 
 // const connection = await connect("amqp://localhost");
 // const channel = await connection.createChannel();
@@ -11,7 +10,6 @@ import { Queues } from './queues';
 interface Event {
   routingKey: RoutingKeys;
   exchangeName: Exchanges;
-  queueName: Queues;
   data: any;
 }
 
