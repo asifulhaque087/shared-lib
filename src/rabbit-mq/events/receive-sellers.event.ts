@@ -8,7 +8,13 @@ export interface ReceiveSellersEvent {
   queueName: Queues.Receive_Sellers;
 
   data: {
-    sellers: { id: number }[];
+    sellers: {
+      id: number;
+      email: string;
+      username: string;
+      profilePicture: string;
+    }[];
+
     count: number;
   };
 }
