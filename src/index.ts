@@ -26,6 +26,8 @@ export * from './rabbit-mq/queues';
 export * from './rabbit-mq/events/send-email-event';
 export * from './rabbit-mq/events/create-buyer.event';
 export * from './rabbit-mq/events/remove-buyers-event';
+export * from './rabbit-mq/events/get-sellers.event';
+export * from './rabbit-mq/events/receive-sellers.event';
 
 // ** Cloudinary
 export * from './cloudinary-upload';
