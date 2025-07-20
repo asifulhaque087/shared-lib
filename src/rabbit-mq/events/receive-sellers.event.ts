@@ -12,7 +12,7 @@ export interface ReceiveSellersEvent {
       id: number;
       email: string;
       username: string;
-      profilePicture: string;
+      profilePicture: string | null;
     }[];
 
     count: number;
