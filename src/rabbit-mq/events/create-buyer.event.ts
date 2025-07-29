@@ -8,7 +8,7 @@ export interface CreateBuyerEvent {
   queueName: Queues.Create_Buyers_Queue;
 
   data: {
-    id: number;
+    id: string;
     username: string;
     email: string;
     profilePublicId: string;

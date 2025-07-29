@@ -9,7 +9,7 @@ export interface ReceiveSellersEvent {
 
   data: {
     sellers: {
-      id: number;
+      id: string;
       email: string;
       username: string;
       profilePicture: string | null;
