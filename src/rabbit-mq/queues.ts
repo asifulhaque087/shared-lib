@@ -1,7 +1,21 @@
-export enum Queues {
+export declare enum Queues {
   Mail_Queue = 'mail_queue',
   Remove_Buyers_Queue = 'remove_buyers_queue',
   Create_Buyers_Queue = 'create_buyers_queue',
   Get_Sellers = 'get_sellers',
   Receive_Sellers = 'receive_sellers',
+  AuthSeedRequested = 'auth:seed:requested',
+  AuthSeedReturned = 'auth:seed:returned',
+  UserSeedRequested = 'user:seed:requested',
+  UserSeedReturned = 'user:seed:returned',
+  GigSeedRequested = 'gig:seed:requested',
+  GigSeedReturned = 'gig:seed:returned',
+  ChatSeedRequested = 'chat:seed:requested',
+  ChatSeedReturned = 'chat:seed:returned',
+  OrderSeedRequested = 'order:seed:requested',
+  OrderSeedReturned = 'order:seed:returned',
+  ReviewSeedRequested = 'review:seed:requested',
+  ReviewSeedReturned = 'review:seed:returned',
+  GigCountUpdateRequested = 'gig:count:update:requested',
+  OrderUpdateRequested = 'order:update:requested',
 }

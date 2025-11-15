@@ -1,4 +1,4 @@
-export enum Exchanges {
+export declare enum Exchanges {
   Mail_Exchange = 'mail_exchange',
   Remove_Buyers_Exchange = 'remove_buyers_exchange',
   Create_Buyers_Exchange = 'create_buyers_exchange',
@@ -6,4 +6,21 @@ export enum Exchanges {
   Seller_Reviews_Buyer = 'seller_review_buyer',
   Get_Sellers = 'get_sellers',
   Receive_Sellers = 'receive_sellers',
+  Seller_Received_Review = 'seller_received_review',
+  Buyer_Received_Review = 'buyer_received_review',
+  AuthSeedRequested = 'auth:seed:requested',
+  AuthSeedReturned = 'auth:seed:returned',
+  UserSeedRequested = 'user:seed:requested',
+  UserSeedReturned = 'user:seed:returned',
+  GigSeedRequested = 'gig:seed:requested',
+  GigSeedReturned = 'gig:seed:returned',
+  ChatSeedRequested = 'chat:seed:requested',
+  ChatSeedReturned = 'chat:seed:returned',
+  OrderSeedRequested = 'order:seed:requested',
+  OrderSeedReturned = 'order:seed:returned',
+  ReviewSeedRequested = 'review:seed:requested',
+  ReviewSeedReturned = 'review:seed:returned',
+  ReviewSeeded = 'review:seeded',
+  GigCountUpdateRequested = 'gig:count:update:requested',
+  OrderUpdateRequested = 'order:update:requested',
 }

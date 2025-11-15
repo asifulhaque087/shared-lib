@@ -1,7 +1,21 @@
-export enum RoutingKeys {
+export declare enum RoutingKeys {
   SendEmail = 'send:email',
   RemoveBuyers = 'remove:buyers',
   CreateBuyer = 'create:buyer',
   GetSellers = 'get:sellers',
   ReceiveSellers = 'receive:sellers',
+  AuthSeedRequested = 'auth:seed:requested',
+  AuthSeedReturned = 'auth:seed:returned',
+  UserSeedRequested = 'user:seed:requested',
+  UserSeedReturned = 'user:seed:returned',
+  GigSeedRequested = 'gig:seed:requested',
+  GigSeedReturned = 'gig:seed:returned',
+  ChatSeedRequested = 'chat:seed:requested',
+  ChatSeedReturned = 'chat:seed:returned',
+  OrderSeedRequested = 'order:seed:requested',
+  OrderSeedReturned = 'order:seed:returned',
+  ReviewSeedRequested = 'review:seed:requested',
+  ReviewSeedReturned = 'review:seed:returned',
+  GigCountUpdateRequested = 'gig:count:update:requested',
+  OrderUpdateRequested = 'order:update:requested',
 }
