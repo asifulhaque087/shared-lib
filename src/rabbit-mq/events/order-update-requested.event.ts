@@ -1,6 +1,7 @@
 import { Exchanges } from '../exchanges';
 import { Queues } from '../queues';
 import { RoutingKeys } from '../routing-keys';
+
 type OrderStatus = 'incomplete' | 'progress' | 'complete';
 
 export interface OrderUpdateRequested {
