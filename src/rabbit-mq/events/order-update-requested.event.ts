@@ -12,6 +12,8 @@ export interface OrderUpdateRequested {
       id: string;
       sellerId: string;
       status: OrderStatus;
+      price : number;
+      buyerId: string;
     }[];
   };
 }
